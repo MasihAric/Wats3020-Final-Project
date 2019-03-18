@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="WATS 3020 Final Project">
-  <title>WATS 3020: Final Project</title>
-  <meta name="author" content="Aric Masih">
-</head>
-
-<body>
-  <form>
-  <h2>Protein Calculator</h2>
-  <h3>Select gender: </h3> 
-  <select>
-  <option value="Male">Male</option>
-  <option value="Female">Female</option>
-  </select>
-  <div>
-  <div>
-  <h3>Enter age: </h3>
-  <input type="text" name="firstname" value="18">
-  </div>
-  <div>
-  <br>
-  <h3>Enter Weight(lbs): </h3>
-  <input type="text" name="lastname" value="125">
-  <br><br>
-  </div>
-  <input type="submit" value="Submit">
-  <input type="reset" value="Reset">
-</form>
-  <h2>Report</h2>
-  <ul><li>Gender: <span id="gender">Male</span></li></ul>
-  
-  <script src="main.js"></script>
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="WATS 3020 Final Project">
+    <title>WATS 3020: Final Project</title>
+    <meta name="author" content="Aric Masih">
+    <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <form>
+    <h2>Protein Calculator</h2>
+    <p>
+    <label for="gender-input">Select gender:<select>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    </select>
+    </label>
+    </p>
+    <p>
+    <label for="age-input">Enter age: <input type="text" name="firstname" value="18">
+    </label>
+    </p>
+    <p>
+    <label for="weight-input">Enter Weight(lbs): <input type="text" name="lastname" value="125">
+    </label>
+    </p>
+    <p>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </p>
+    </form>
+    <p>
+    <h2>Result</h2>
+    <textarea rows="4" cols="50"></textarea>
+    </p>
+  </body>
 </html>
