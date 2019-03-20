@@ -3,3 +3,11 @@
 //Make use of either Functions or Classes to organize your code.
 //Make use of at least TWO Event listeners and handlers to respond to user interaction.
 //Perform at least TWO string modifications/replacements on the page.
+let person = {
+    gendertype = "male", "female";
+}
+
+funtion myFunction() {
+    var x = document.getElementById("gender").value;
+    document.getElementById("result").innerHTML = x;
+}

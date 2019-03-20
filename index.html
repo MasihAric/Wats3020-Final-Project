@@ -7,34 +7,33 @@
     <title>WATS 3020: Final Project</title>
     <meta name="author" content="Aric Masih">
     <link rel="stylesheet" href="css/main.css">
-  <script src="js/main.js" defer></script>
   </head>
   <body>
     <form>
-    <h2>Protein Calculator</h2>
-    <p>
-    <label for="gender-input">Select gender:<select>
-    <option value="Male">Male</option>
-    <option value="Female">Female</option>
-    </select>
-    </label>
-    </p>
-    <p>
-    <label for="age-input">Enter age: <input type="text" name="firstname" value="18">
-    </label>
-    </p>
-    <p>
-    <label for="weight-input">Enter Weight(lbs): <input type="text" name="lastname" value="125">
-    </label>
-    </p>
-    <p>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-    </p>
+      <h2>Protein Calculator</h2>
+      <br>
+      <p>
+      Select gender:
+      <select id ="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      </p>
+      <p>
+      <label for="age-input">Enter age: <input type="text" name="firstname" value="18"></label>
+      </p>
+      <p>
+      <label for="weight-input">Enter Weight(lbs): <input type="text" name="lastname" value="125"></label>
+      </p>
+      <br>
+      <p>
+      <button type="button" onclick="mySubmit()">Submit</button>
+      <button type="button" onclick="reset">Reset</button>
+      </p>
     </form>
-    <p>
-    <h2>Result</h2>
-    <textarea rows="4" cols="50"></textarea>
-    </p>
+      <p>
+      <textarea id="" rows="4" cols="50"></textarea>
+      </p>
+      <script src="js/main.js" defer></script>
   </body>
 </html>
