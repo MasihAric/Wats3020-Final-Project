@@ -13,27 +13,26 @@
       <h2>Protein Calculator</h2>
       <br>
       <p>
-      Select gender:
-      <select id ="gender">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-      </select>
+      <label>Select gender:
+        <select id="gender" name="gender">
+          <option value=""></option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </label>
       </p>
       <p>
-      <label for="age-input">Enter age: <input type="text" name="firstname" value="18"></label>
+      <label for="age-input">Enter age: <input id="age" type="text" name="Age" value="18"></label>
       </p>
       <p>
-      <label for="weight-input">Enter Weight(lbs): <input type="text" name="lastname" value="125"></label>
+      <label for="weight-input">Enter Weight(lbs): <input id="weight" type="text" name="Weight" value="125"></label>
       </p>
       <br>
       <p>
-      <button type="button" onclick="mySubmit()">Submit</button>
-      <button type="button" onclick="reset">Reset</button>
+        <button type="button" id="calculate">Submit</button>
+        <button type="reset">Reset</button>
       </p>
     </form>
-      <p>
-      <textarea id="" rows="4" cols="50"></textarea>
-      </p>
-      <script src="js/main.js" defer></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
