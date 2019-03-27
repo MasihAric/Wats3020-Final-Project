@@ -2,3 +2,9 @@ body {
     background-color: lightgrey;
     text-align: center;
 }
+.hide{
+    display: none;
+}
+.show{
+    display: "block";
+}
